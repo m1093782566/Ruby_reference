@@ -7,7 +7,7 @@ Process.wait
 
 #If you'd rather be notified when a child exits (instead of just waiting around),
 #you can set up a signal handler using Object#trap
-trap("CLD") do #register the process block for signal CLD
+trap("CLD") do #register the process block for signal CLD, CLD/CHLD--CHILD
   pid = Process.wait
   puts "Child pid #{pid}: terminated"
 end
