@@ -28,3 +28,7 @@ cgi.out {
     }
   }
 }
+#The code in the previous example used the default storage mechanism for sessions: persistent
+#data was stored in files in your default temporary directory (see Dir.tmpdir). The filenames
+#will all start with web-session. and will end with a hashed version of the session number. See
+#the documentation for CGI::Session for more information.
