@@ -1,0 +1,7 @@
+#load irb/completion before use irb
+$ irb -r irb/completion
+#You can also load the completion library when irb is running:
+ruby 2.0 > require 'irb/completion'
+#If you use tab completion all the time and if it doesn't load by default, it's probably most
+#convenient to put the require command into your .irbrc file: in your home directory, if .irbrc not found in this dir, simply create it.
+
