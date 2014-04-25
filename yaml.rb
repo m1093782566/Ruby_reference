@@ -1,3 +1,4 @@
+#reference bosh/monitor/yaml_helper.rb
 def write_yaml(file, hash)
   unless hash == load_config(file)
     File.open(file, "w+") do |f|
