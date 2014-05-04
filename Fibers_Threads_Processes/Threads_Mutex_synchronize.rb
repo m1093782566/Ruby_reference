@@ -3,7 +3,7 @@ mutex = Mutex.new
 threads = 10.times.map do
   Thread.new do
     100_000.times do
-      mutex.synchronize do #like lock&unlock
+      mutex.synchronize do #like lock&unlock, acquire mutex when access, release mutex when exit.
         new_value = sum + 1
         print "#{new_value} " if new_value % 250_000 == 0
         sum = new_value
