@@ -1,3 +1,6 @@
+#usage:
+#please reference https://github.com/cloudfoundry/bosh/blob/master/bosh-director/lib/bosh/director/deployment_plan/assembler.rb#L36
+
 require "logger"
 
 module Bosh
